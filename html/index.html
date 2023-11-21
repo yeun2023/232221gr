@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박예은 그라데이션인트로</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cutive&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background: url("./images/gr.svg") no-repeat center/cover;
+            height: 100vh;
+            color: #fff;
+            /* overflow: hidden; */
+
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+        .ani{
+            font-size: 150px;
+            /* font-weight: bold; */
+            font-family: 'Cutive', serif;
+            animation: slideUp 1s ease both;
+        }
+
+        
+
+        /* from - 시작, to - 끝날때 */
+        @keyframes slideUp{
+            from{
+                transform:translateY(100%) ;
+            }
+            to{
+                transform:translateY(0%) ;
+            }
+
+        }
+
+        .P{animation-delay: 0s;}
+        .Y{animation-delay: 1s;}
+
+
+    </style>
+</head>
+<body>
+    <!-- .box>.ani.Y{Y}*2 -->
+    <div class="box">
+        <div class="ani P">P</div>
+        <div class="ani Y">Y</div>
+    </div>
+    
+</body>
+</html>
